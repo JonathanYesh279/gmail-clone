@@ -1,28 +1,73 @@
 .app-header {
-    background: #e91e63;
-    color: white;
-
+    width: 170px;
+    height: 100vh;
+    border-right: 1px solid #e9ecef;
+    flex-shrink: 0;
 }
 
-.app-header section.container {
+
+.app-header div {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    gap: 10px;
+    width: 170px;
+    margin-top: 10px;
 }
 
-.app-header h1.logo {
-    flex-grow: 1;
-    font-weight: 600;
+.btn {
+    background-color: #fff;
+    border: none;
+    margin: 5px;
 }
 
-.app-header .back {
-    flex-grow: 1;
+.btn:hover {
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
 }
 
-.app-header nav a:not(:last-child) {
-    margin-right: 10px;
+.btn.active {
+    color: darkblue;
+    border-bottom: 5px solid darkblue;
 }
 
-.app-header section.container>section {
-    flex-grow: 1;
+.btn-compose {
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.btn-emails {
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.app-header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+
+.app-header a {
+    margin: 20px;
 }

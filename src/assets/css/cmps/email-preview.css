@@ -1,0 +1,42 @@
+.email-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px 20px;
+  border: 1px solid #E6E7E7;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.email-preview:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.email-infos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.email-preview img {
+  width: 15px;
+  height: 15px;
+  color: aliceblue;
+}
+
+.email-preview h4 {
+  font-weight: 500;
+}
+
+.email-preview p {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 100;
+  color: #888;
+}
+
+.email-preview isread {
+  background-color: #F5F7F7;
+}
